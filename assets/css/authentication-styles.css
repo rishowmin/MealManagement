@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+    padding:0;
+    outline:0
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+}
+
+.main-body {
+    background-image: url(../images/hero-bg.png);
+    background-color: #111111;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-card-style {
+    width: 40%;
+    margin: 22vh auto;
+    border-color: #ff670a;
+    background-color: #ff670a;
+}
+
+.register-card-style {
+    width: 40%;
+    margin: 10vh auto;
+    border-color: #ff670a;
+    background-color: #ff670a;
+}   
+
+.login-form {
+    background-color: #111111;
+}
+
+.login-logo {
+    width: 50%;
+}
+
+.login-stratup h2 {
+    color: #ff670a;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #cf5407;
+    border-color: #cf5407;
+}
+
+.login-btn:hover {
+    background-color: #ff670a;
+    border-color: #ff670a;
+}
+
+.dont-have-account {
+    text-align: center;
+}
+
+.dont-have-account p{
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.dont-have-account p a {
+    color: #ff670a;
+}
+
+.input-group-text {
+    background-color: #ea742b;
+    border: 1px solid #ea742b;
+    color: #1b1919;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group-text-secondary {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-control {
+    border: 1px solid #ea742b;
+}
+
+@media screen and (max-width: 768px) {
+    .login-card-style {
+        width: 100%;
+        margin: 20vh auto;
+    }
+
+    .register-card-style {
+        width: 100%;
+        margin: 12vh auto;
+    }
+}
