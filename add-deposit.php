@@ -1,3 +1,10 @@
+<?php
+
+require_once ("./php/component.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -134,124 +141,50 @@
                             <div class="card-body">
                                 <form method="post">
                                         <div class="row">
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-tie"></i></span>
-                                                 <input type="text" class="form-control" placeholder="Depositor Name" name="depositor_name">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-user-tie'></i>","text","Depositor Name","","depositor_name",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar"></i></span>
-                                                <input type="text" class="form-control" placeholder="Month of Deposit" name="deposit_month">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-calendar'></i>","text","Month of Deposit","","deposit_month",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-day"></i></span>
-                                                <input type="text" class="form-control" placeholder="Date of Deposit" name="deposit_date">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-calendar-day'></i>","text","Date of Deposit","","deposit_date",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
-                                                <input type="number" class="form-control" placeholder="Total Installment Amount" name="total_amount">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text input-group-text-secondary"><i class="fas fa-dollar-sign"></i></span>
-                                                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForNumber("<i class='fas fa-money-bill-alt'></i>","number","Total Installment Amount","","total_amount","","<i class='fas fa-dollar-sign''></i>"); ?>
                                             </div>
 
                                             <div class="col-md-12 mt-3 mb-2">
                                             <h4><i class="fas fa-hand-holding-usd"></i> Deposit of Installment</h4>
                                             </div>
 
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-day"></i></span>
-                                                <input type="text" class="form-control" placeholder="Date of 1st Installment" name="1st_installment_date">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-calendar-day'></i>","text","Date of 1st Installment","","1st_installment_date",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
-                                                <input type="number" class="form-control" placeholder="1st Installment" name="1st_installment">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text input-group-text-secondary"><i class="fas fa-dollar-sign"></i></span>
-                                                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForNumber("<i class='fas fa-money-bill-alt'></i>","number","1st Installment","","1st_installment","","<i class='fas fa-dollar-sign''></i>"); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-day"></i></span>
-                                                <input type="text" class="form-control" placeholder="Date of 2nd Installment" name="2nd_installment_date">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-calendar-day'></i>","text","Date of 2nd Installment","","2nd_installment_date",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
-                                                <input type="number" class="form-control" placeholder="2nd Installment" name="2nd_installment">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text input-group-text-secondary"><i class="fas fa-dollar-sign"></i></span>
-                                                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForNumber("<i class='fas fa-money-bill-alt'></i>","number","2nd Installment","","2nd_installment","","<i class='fas fa-dollar-sign''></i>"); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-day"></i></span>
-                                                <input type="text" class="form-control" placeholder="Date of 3rd Installment" name="3rd_installment_date">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-calendar-day'></i>","text","Date of 3rd Installment","","3rd_installment_date",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
-                                                <input type="number" class="form-control" placeholder="3rd Installment" name="3rd_installment">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text input-group-text-secondary"><i class="fas fa-dollar-sign"></i></span>
-                                                </div>
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForNumber("<i class='fas fa-money-bill-alt'></i>","number","3rd Installment","","3rd_installment","","<i class='fas fa-dollar-sign''></i>"); ?>
                                             </div>
                          
                                             <div class="col-md-12 text-right">
-                                                <button class="btn btn-danger" type="reset" name="reset">Reset</button>
-                                                <button class="btn btn-success" type="submit" name="submit">Insert</button>
+                                                <?php buttonElement("btn btn-danger","reset","reset","<i class='fas fa-trash-restore'></i>","Reset"); ?>
+                                                <?php buttonElement("btn btn-success","submit","submit","<i class='fas fa-plus'></i>","Insert"); ?>
                                             </div>
                                         </div>
-
-
-
-
-
-
-
-                                    
                                 </form>
                             </div>
                         </div>
-
-
-                        <!-- <div class="card card-body">                            
-                            <h4 class="history-cls"><i class="fas fa-history"></i> History of Deposite</h4>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>Number of Installment</th>
-                                            <th>Date Of Installment</th>
-                                            <th>Amount of Installment</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1st Installment</td>
-                                            <td>5 Jan 2021</td>
-                                            <td>1500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2nd Installment</td>
-                                            <td>3 Jan 2021</td>
-                                            <td>1200</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3rd Installment</td>
-                                            <td>12 Jan 2021</td>
-                                            <td>2000</td>
-                                        </tr>                                            
-                                    </tbody>
-                                  </table>
-                            </div>
-                        </div> -->
-
-
-
-
-
-
-
-
-
-
-
 
                     </div>
                 </main>
