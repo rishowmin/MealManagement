@@ -1,3 +1,10 @@
+<?php
+
+require_once ("./php/component.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -175,9 +182,9 @@
                                                 <td> +8801680078100 </td>
                                                 <td> Administrator </td>
                                                 <td>
-                                                    <a href="#" class="details-btn" data-toggle="tooltip" data-placement="top" title="Details"><i class="far fa-file-alt"></i></a>
-                                                    <a href="#" class="edit-btn" data-toggle="tooltip" data-placement="top" title="Update"><i class="fas fa-edit"></i></a>
-                                                    <a href="#" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    <?php anchorElement("#","details-btn","tooltip","top","Details","<i class='far fa-file-alt'></i>") ?>
+                                                    <?php anchorElement("#","edit-btn","tooltip","top","Update","<i class='fas fa-pencil-alt'></i>") ?>
+                                                    <?php anchorElement("#","delete-btn","tooltip","top","Details","<i class='far fa-trash-alt'></i>") ?>
                                                 </td>
                                             </tr>
                                         </tbody>

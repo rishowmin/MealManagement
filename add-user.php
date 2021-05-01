@@ -1,3 +1,10 @@
+<?php
+
+require_once ("./php/component.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -134,48 +141,31 @@
                             <div class="card-body">
                                 <form method="post">
                                         <div class="row">
-                                            <div class="col-md-12 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-tie"></i></span>
-                                                <input type="text" class="form-control" placeholder="User Name" name="user_name">
+                                            <div class="col-md-12 mb-3">
+                                                <?php inputElement("<i class='fas fa-user-tie'></i>","text","User Name","","user_name",""); ?>
                                             </div>
-
-                                            <!-- <div class="col-md-12 input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                <span class="input-group-text" id="basic-addon1"><b>Name</b></span>
-                                                </div>
-                                                <input type="text" class="form-control" placeholder="First Name" name="user_first_name" required>
-                                                <input type="text" class="form-control" placeholder="Last Name" name="user_last_name" required>
-                                            </div> -->
-
-
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-venus-mars"></i></span>
-                                                 <input type="text" class="form-control" placeholder="User Gender" name="user_gender">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElement("<i class='fas fa-venus-mars'></i>","text","User Gender","","user_gender",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
-                                                <input type="email" class="form-control" placeholder="User Email" name="user_email">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElement("<i class='fas fa-envelope'></i>","email","User Email","","user_email",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span>
-                                                <input type="text" class="form-control" placeholder="User Phone Number" name="user_phone">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElement("<i class='fas fa-phone'></i>","tel","User Phone Number","phone","user_phone","[0-9]{3}-[0-9]{4}-[0-9]{4}"); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-briefcase"></i></span>
-                                                 <input type="text" class="form-control" placeholder="User Designation" name="user_designation">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElement("<i class='fas fa-briefcase'></i>","text","User Designation","","user_designation",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-day"></i></span>
-                                                <input type="text" class="form-control" placeholder="User Joining Date" name="user_joining_date">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElement("<i class='fas fa-calendar-day'></i>","text","User Joining Date","","user_joining_date",""); ?>
                                             </div>
-                                            <div class="col-md-6 input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-cog"></i></span>
-                                                 <input type="text" class="form-control" placeholder="User Role" name="user_role">
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElement("<i class='fas fa-user-cog'></i>","text","User Role","","user_role",""); ?>
                                             </div>
                          
                                             <div class="col-md-12 text-right">
-                                                <button class="btn btn-danger" type="reset" name="reset">Reset</button>
-                                                <button class="btn btn-success" type="submit" name="submit">Insert</button>
+                                                <?php buttonElement("btn btn-danger","reset","reset","<i class='fas fa-trash-restore'></i>","Reset"); ?>
+                                                <?php buttonElement("btn btn-success","submit","submit","<i class='fas fa-plus'></i>","Insert"); ?>
                                             </div>
                                         </div>
 
