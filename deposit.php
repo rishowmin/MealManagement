@@ -1,3 +1,10 @@
+<?php
+
+require_once ("./php/component.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Deposite</title>
+        <title>Deposit</title>
         <link href="assets/css/styles.css" rel="stylesheet" />
         <link href="assets/css/custom-styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
@@ -171,7 +178,6 @@
                                                 <th>Month of Deposit</th>
                                                 <th>Date of Deposit</th>
                                                 <th>Total Amount</th>
-                                                <th>Installment's Step</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -181,7 +187,6 @@
                                                 <th>Month of Deposit</th>
                                                 <th>Date of Deposit</th>
                                                 <th>Total Amount</th>
-                                                <th>Installment's Step</th>
                                                 <th>Action</th>
                                             </tr>
                                         </tfoot> -->
@@ -192,15 +197,10 @@
                                                 <td> January 2020 </td>
                                                 <td> 20 Jan 2020 </td>
                                                 <td> 2000 </td>
-                                                <td>
-                                                    <i class="fas fa-check-circle"></i>
-                                                    <i class="fas fa-check-circle"></i>
-                                                    <i class="far fa-circle"></i>
-                                                </td>
                                                 <td class="td-bg">
-                                                    <a href="#" class="details-btn" data-toggle="tooltip" data-placement="top" title="Details"><i class="far fa-file-alt"></i></a>
-                                                    <a href="#" class="edit-btn" data-toggle="tooltip" data-placement="top" title="Update"><i class="fas fa-edit"></i></a>
-                                                    <a href="#" class="delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    <?php anchorElement("#","details-btn","tooltip","top","Details","<i class='far fa-file-alt'></i>") ?>
+                                                    <?php anchorElement("#","edit-btn","tooltip","top","Update","<i class='fas fa-pencil-alt'></i>") ?>
+                                                    <?php anchorElement("#","delete-btn","tooltip","top","Details","<i class='far fa-trash-alt'></i>") ?>
                                                 </td>
                                             </tr>
 

@@ -142,25 +142,25 @@ require_once ("./php/component.php");
                                 <form method="post">
                                         <div class="row">
                                             <div class="col-md-12 mb-3">
-                                                <?php inputElement("<i class='fas fa-user-tie'></i>","text","User Name","","user_name",""); ?>
+                                                <?php inputElementForText("<i class='fas fa-user-tie'></i>","text","User Name","","user_name",""); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <?php inputElement("<i class='fas fa-venus-mars'></i>","text","User Gender","","user_gender",""); ?>
+                                                <?php inputElementForText("<i class='fas fa-venus-mars'></i>","text","User Gender","","user_gender",""); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <?php inputElement("<i class='fas fa-envelope'></i>","email","User Email","","user_email",""); ?>
+                                                <?php inputElementForText("<i class='fas fa-envelope'></i>","email","User Email","","user_email",""); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <?php inputElement("<i class='fas fa-phone'></i>","tel","User Phone Number","phone","user_phone","[0-9]{3}-[0-9]{4}-[0-9]{4}"); ?>
+                                                <?php inputElementForText("<i class='fas fa-phone'></i>","tel","User Phone Number","phone","user_phone","[0-9]{3}-[0-9]{4}-[0-9]{4}"); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <?php inputElement("<i class='fas fa-briefcase'></i>","text","User Designation","","user_designation",""); ?>
+                                                <?php inputElementForText("<i class='fas fa-briefcase'></i>","text","User Designation","","user_designation",""); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <?php inputElement("<i class='fas fa-calendar-day'></i>","text","User Joining Date","","user_joining_date",""); ?>
+                                                <?php inputElementForText("<i class='fas fa-calendar-day'></i>","text","User Joining Date","","user_joining_date",""); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <?php inputElement("<i class='fas fa-user-cog'></i>","text","User Role","","user_role",""); ?>
+                                                <?php inputElementForText("<i class='fas fa-user-cog'></i>","text","User Role","","user_role",""); ?>
                                             </div>
                          
                                             <div class="col-md-12 text-right">
