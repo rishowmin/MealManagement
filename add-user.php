@@ -141,8 +141,11 @@ require_once ("./php/component.php");
                             <div class="card-body">
                                 <form method="post">
                                         <div class="row">
-                                            <div class="col-md-12 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <?php inputElementForText("<i class='fas fa-user-tie'></i>","text","User Name","","user_name",""); ?>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <?php inputElementForText("<i class='fas fa-calendar-day'></i>","text","User Date of Birth","","user_date_of_birth",""); ?>
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <?php inputElementForText("<i class='fas fa-venus-mars'></i>","text","User Gender","","user_gender",""); ?>
